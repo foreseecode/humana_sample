@@ -2,7 +2,6 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTLinkingManager.h>
-#import <ForeSee/ForeSee.h>
 
 @implementation AppDelegate
 
@@ -14,7 +13,6 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
   
-  [ForeSee start];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }

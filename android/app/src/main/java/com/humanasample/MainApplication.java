@@ -12,11 +12,13 @@ import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
+import com.foresee.sdk.ForeSee;
 
 import expo.modules.ApplicationLifecycleDispatcher;
 import expo.modules.ReactNativeHostWrapper;
 
 import java.util.List;
+import com.foresee.sdk.ForeSee;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -70,6 +72,8 @@ public class MainApplication extends Application implements ReactApplication {
     }
     ReactNativeFlipper.initializeFlipper(this, getReactNativeHost().getReactInstanceManager());*/
     ApplicationLifecycleDispatcher.onApplicationCreate(this);
+
+    ForeSee.start(this);
   }
 
   @Override
