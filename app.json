@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "humana-sample",
+    "slug": "humana-sample",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "humana-sample"
+}
