@@ -35,7 +35,6 @@ export default function App() {
   ForeSee.start(config);
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app (for real)!</Text>
       <StatusBar style="auto" />
       <ForeSeeButton title="Reset state" onPress={() => { 
         ForeSee.resetState();
@@ -45,6 +44,9 @@ export default function App() {
       }} />
       <ForeSeeButton title="Show Survey" onPress={() => { 
         ForeSee.showSurvey("mobile_app-humana_pharmacy-en");
+      }} />
+      <ForeSeeButton title="Check eligibility" onPress={() => { 
+        ForeSee.checkEligibility();
       }} />
     </View>
   );
