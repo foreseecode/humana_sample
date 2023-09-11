@@ -245,10 +245,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-humanasample/Pods-humanasample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSee/Core/ForeSee.framework/ForeSee",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSee/Core/ForeSeeUtilities.framework/ForeSeeUtilities",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSee/Core/IngestionLogger.framework/IngestionLogger",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSee/ForeSeeCxMeasure/ForeSeeCxMeasure.framework/ForeSeeCxMeasure",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IngestionLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
